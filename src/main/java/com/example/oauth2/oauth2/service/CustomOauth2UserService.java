@@ -48,7 +48,13 @@ public class CustomOauth2UserService extends DefaultOAuth2UserService {
         if (!StringUtils.hasText(oAuth2UserInfo.getEmail())) {
             throw new OAuth2AuthenticationProcessingException("Email not found from OAuth2 provider");
         }
+
+        OAuth2UserPrincipal oauth2User = new OAuth2UserPrincipal(oAuth2UserInfo);
+        oauth2User.setLoginType("oauth2");
+        oauth2User.setAddress("test");
+        oauth2User.setPhone("000000000");
+
         //그렇게 response 통일시킨 custom 객체를 이용해서 OAuth2User 구현체 만듦
-        return new OAuth2UserPrincipal(oAuth2UserInfo);
+        return oauth2User;
     }
 }

@@ -1,5 +1,6 @@
 package com.example.oauth2.oauth2.user;
 
+import com.example.oauth2.login.user.CustomUserDetails;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.user.OAuth2User;
@@ -8,10 +9,21 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
 
-public class OAuth2UserPrincipal implements OAuth2User, UserDetails {
+public class OAuth2UserPrincipal extends CustomUserDetails implements OAuth2User {
     private final OAuth2UserInfo userInfo;
     public OAuth2UserPrincipal(OAuth2UserInfo userInfo){
         this.userInfo = userInfo;
+    }
+
+
+    @Override
+    public String getPhone(){
+        return "0100000";
+    }
+
+    @Override
+    public String getLoginType(){
+        return "social";
     }
 
     @Override

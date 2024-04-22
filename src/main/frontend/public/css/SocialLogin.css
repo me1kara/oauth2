@@ -1,0 +1,45 @@
+/* SocialLogin.css */
+
+.social-login-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-login-btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google {
+    background-color: #DB4437;
+  }
+  
+  .naver {
+    background-color: #03C75A;
+  }
+  
+  .kakao {
+    background-color: #FFEE00;
+  }
+  
+  .social-login-btn i {
+    margin-right: 10px;
+  }
+  
