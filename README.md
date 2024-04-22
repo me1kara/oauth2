@@ -16,6 +16,7 @@ OAuth2
 - SecurityConfig, application.yml 기본 설정
 - DefaultOAuth2UserService을 상속받은 서비스
 - 사이트 별로 다른 response를 통합하기 위한 OAuth2User 구현
+- form 로그인과 oauth2 로그인
 
 참조 사이트 <br>
 https://velog.io/@nefertiri/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-OAuth2-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC <br>
